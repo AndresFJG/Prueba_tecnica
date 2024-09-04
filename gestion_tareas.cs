@@ -1,9 +1,5 @@
-using System;
-using System.Collections.Generic;
 
-/// <summary>
-/// Clase que gestiona las operaciones relacionadas con la lista de tareas.
-/// </summary>
+
 public class GestionTareas
 {
     // Lista que almacena todas las tareas.
@@ -14,9 +10,6 @@ public class GestionTareas
         listaTareas = new List<Tarea>(); // Inicializa la lista de tareas vacía.
     }
 
-    /// <summary>
-    /// Método para agregar una nueva tarea a la lista.
-    /// </summary>
     public void AgregarTarea()
     {
         Console.Write("Ingrese la descripción de la tarea: ");
@@ -44,9 +37,6 @@ public class GestionTareas
         Console.WriteLine("Tarea agregada con éxito.");
     }
 
-    /// <summary>
-    /// Método para listar todas las tareas.
-    /// </summary>
     public void ListarTareas()
     {
         if (listaTareas.Count == 0)
@@ -63,10 +53,6 @@ public class GestionTareas
             }
         }
     }
-
-    /// <summary>
-    /// Método para marcar una tarea como completada.
-    /// </summary>
     public void MarcarTareaCompletada()
     {
         ListarTareas();
@@ -92,10 +78,6 @@ public class GestionTareas
             }
         }
     }
-
-    /// <summary>
-    /// Método para eliminar una tarea de la lista.
-    /// </summary>
     public void EliminarTarea()
     {
         ListarTareas();

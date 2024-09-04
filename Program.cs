@@ -1,10 +1,4 @@
-﻿using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        GestionTareas gestionTareas = new GestionTareas();
+﻿     GestionTareas gestionTareas = new GestionTareas();
         bool continuar = true;
 
         while (continuar)
@@ -42,5 +36,5 @@ class Program
                     break;
             }
         }
-    }
-}
+    
+
